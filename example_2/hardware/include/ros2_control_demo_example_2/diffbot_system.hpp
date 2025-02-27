@@ -71,6 +71,7 @@ public:
 
 private:
   // Parameters for the DiffBot simulation
+  int serial_fd_;
   double hw_start_sec_;
   double hw_stop_sec_;
 

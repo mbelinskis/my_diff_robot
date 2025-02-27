@@ -19,6 +19,9 @@ set(THIS_PACKAGE_INCLUDE_DEPENDS
 # find dependencies
 find_package(backward_ros REQUIRED)
 find_package(ament_cmake REQUIRED)
+find_library(WIRINGPI_LIBRARY wiringPi)
+
+
 foreach(Dependency IN ITEMS ${THIS_PACKAGE_INCLUDE_DEPENDS})
   find_package(${Dependency} REQUIRED)
 endforeach()
